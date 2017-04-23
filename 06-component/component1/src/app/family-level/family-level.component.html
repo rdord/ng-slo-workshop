@@ -1,0 +1,5 @@
+<div class="row">
+  <div class="item" *ngFor="let member of family">
+    <app-family-person [person]="member" (clicked)="onClicked($event)"></app-family-person>
+  </div>
+</div>
